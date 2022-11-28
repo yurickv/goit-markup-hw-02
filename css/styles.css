@@ -1,0 +1,57 @@
+/* колір заголовків #2E2F42 */
+/* колір тексту #434455 */
+/* колір WEB #4D5AE5   studio #F4F4FD*/
+/*  текст підвал #E7E9FC    background  #2E2F42;         background кнопки: #4D5AE5*/
+body {    color: #434455;     font-family: 'Roboto', sans-serif; background-color: #FFFFFF;}
+
+/* Хедер */
+.header {    color: #2E2F42;}
+.logo-web {color: #4D5AE5;}
+.logo {color: #2E2F42;}
+.header-contact {    color: #434455;}
+
+/* section-hero */
+.section-hero {background-color: #2E2F42;}
+h1 {color: #FFFFFF;}
+.sec-hero-button {background-color: #4D5AE5; color: #FFFFFF;}
+
+/* section-workmeth */
+.sec-workmeth-ul h3 {color: #2E2F42;}
+.sec-workmeth-ul > li {}
+
+/* section-doing */
+.sec-doing-h2 {color: #2E2F42;}
+
+/* section-ourteam */
+.section-ourteam {background: #F4F4FD}
+.sec-ourteam-h2 {color: #2E2F42;}
+.section-ourteam h3 {color: #2E2F42; }
+.sec-ourteam-mark {background-color: #FFFFFF; 
+    width: 264px;
+    height: 380px;
+    left: 156px;
+    top: 1783px;}
+.sec-ourteam-tom {background-color: #FFFFFF; 
+    width: 264px;
+    height: 380px;
+    left: 444px;
+    top: 1783px;}
+.sec-ourteam-camila {background-color: #FFFFFF; 
+    width: 264px;
+    height: 380px;
+    left: 732px;
+    top: 1783px;}
+.sec-ourteam-daniel {background-color: #FFFFFF; 
+    width: 264px;
+    height: 380px;
+    left: 1020px;
+    top: 1783px;}
+
+/* footer*/
+footer {width: 1440px;
+    height: 310px;
+    left: 0px;
+    top: 2283px; 
+    background-color: #2E2F42;}
+.footer-text{color: #E7E9FC;}
+.logo-footer{color: #F4F4FD;}
