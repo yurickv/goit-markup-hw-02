@@ -17,7 +17,7 @@ body {   background-color: #FFFFFF; color: var(--text);     font-family: 'Roboto
 /* кнопки, зсилки */
 .link {text-decoration-line:none}
 .link:hover {color: var(--brand-color); text-decoration-line: underline; background-color: #FFFFFF}
-.link:focus { color: var(--background); }
+.link:focus { color: var(--brand-color); background-color: #FFFFFF}
 
 /* Хедер */
 .logo-web {color: var(--brand-color);}
@@ -27,8 +27,8 @@ body {   background-color: #FFFFFF; color: var(--text);     font-family: 'Roboto
 
 /* section-hero */
 .section-hero {background-color: var(--background);}
-h1 {color: #FFFFFF;}
-.sec-hero-button {background-color: var(--brand-color); color: #FFFFFF;}
+.hero-title {color: #FFFFFF;}
+.sec-hero-button {background-color: var(--brand-color); color: #FFFFFF; cursor: pointer;}
 
 /* section-workmeth */
 .section-title {color: var(--zagolovok);}
@@ -68,5 +68,23 @@ footer {width: 1440px;
     left: 0px;
     top: 2283px; 
     background-color: var(--background);}
-.footer-text{color: var(--accent);}
+.footer-text{color: var(--accent);
+    width: 264px;
+    height: 72px;}
 .logo-footer{color: var(--studio);}
+
+/* ___________________________________portfolio main____________________________*/
+
+.filtr-button {background-color: var(--studio); color: var(--brand-color); 
+    border: 1px solid #E7E9FC; border-radius: 4px;}
+.filtr-button.active {background-color: #4D5AE5; color: #FFFFFF;}
+
+.portfolio-progect-card {box-sizing: border-box; 
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    width: 360px;
+    height: 420px;}
+.portfolio-title {color: var(--zagolovok);}
+.portfolio-text {color: var(--studio); 
+    width: 296px;
+    height: 96px; }
