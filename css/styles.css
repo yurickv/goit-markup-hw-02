@@ -1,17 +1,17 @@
 /* колір WEB, Focused, Active states Links; background кнопки #4D5AE5  */
 :root { --brand-color: #4D5AE5;}
 /* background;  zagolovok                 #2E2F42; */
-:root { --background: #2E2F42;}
-:root { --zagolovok: #2E2F42;}
+:root { --background: #2E2F42; --zagolovok: #2E2F42;}
 /* колір тексту                         #434455 */
 :root { --text: #434455;}
 /*    studio; back ground             #F4F4FD*/
 :root { --studio: #F4F4FD;}
 /*  текст підвал                  #E7E9FC  */ 
 :root { --accent: #E7E9FC;}
-/*  #E5E5E5 */
 
-body {   background-color: #FFFFFF; color: var(--text);     font-family: 'Roboto', sans-serif; }
+
+body {   background-color: #FFFFFF; color: var(--text);   
+    font-family: 'Roboto', sans-serif; font-style: normal;}
 .list { list-style: none;}
 
 /* кнопки, зсилки */
@@ -21,26 +21,51 @@ body {   background-color: #FFFFFF; color: var(--text);     font-family: 'Roboto
 
 /* Хедер */
 .logo-web {color: var(--brand-color);}
-.logo  {color: var(--zagolovok);}
-.nav-list {color: var(--zagolovok);}
+.logo  {color: var(--zagolovok);
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;}
+.nav-list {color: var(--zagolovok);    }
+.navigation {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.auth-nav {font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;}
 .auth-list { color: var(--text);}
 
 /* section-hero */
 .section-hero {background-color: var(--background);}
-.hero-title {color: #FFFFFF;}
-.sec-hero-button {background-color: var(--brand-color); color: #FFFFFF; cursor: pointer;}
-
+.hero-title {color: #FFFFFF;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.1;
+    width: 492px;    }
+.sec-hero-button {background-color: var(--brand-color); color: #FFFFFF; cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;}
 /* section-workmeth */
-.section-title {color: var(--zagolovok);}
-
-
+.section-title {color: var(--zagolovok);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;}
+.section-title-h3 {color:  var(--zagolovok);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;}
+.text {font-size: 16px;
+    line-height: 1.5;}
 /* section-doing */
-.section-title {color: var(--zagolovok);}
+
 
 /* section-ourteam */
 .section-ourteam {background: var(--studio);}
-.section-title {color:  var(--zagolovok);}
-.section-title-h3 {color:  var(--zagolovok); }
 .sec-ourteam-mark {background-color: #FFFFFF; 
     width: 264px;
     height: 380px;
@@ -63,28 +88,44 @@ body {   background-color: #FFFFFF; color: var(--text);     font-family: 'Roboto
     top: 1783px;}
 
 /* footer*/
-footer {width: 1440px;
-    height: 310px;
-    left: 0px;
-    top: 2283px; 
+footer {
     background-color: var(--background);}
 .footer-text{color: var(--accent);
+    font-size: 16px;
+    line-height: 1.5;
+
     width: 264px;
     height: 72px;}
-.logo-footer{color: var(--studio);}
-
+.logo-footer{color: var(--studio); 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;}
 /* ___________________________________portfolio main____________________________*/
+.filtr {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;}
 
 .filtr-button {background-color: var(--studio); color: var(--brand-color); 
     border: 1px solid #E7E9FC; border-radius: 4px;}
 .filtr-button.active {background-color: #4D5AE5; color: #FFFFFF;}
+
+/* progect-card */
 
 .portfolio-progect-card {box-sizing: border-box; 
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     width: 360px;
     height: 420px;}
-.portfolio-title {color: var(--zagolovok);}
+.portfolio-title {color: var(--zagolovok);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;}
+.filtr-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;}
 .portfolio-text {color: var(--studio); 
     width: 296px;
     height: 96px; }
