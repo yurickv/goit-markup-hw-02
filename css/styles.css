@@ -1,22 +1,22 @@
 /* колір WEB, Focused, Active states Links; background кнопки #4D5AE5  */
-:root { --brand-color: #4D5AE5;}
-/* background;  zagolovok                 #2E2F42; */
-:root { --background: #2E2F42; --zagolovok: #2E2F42;}
-/* колір тексту                         #434455 */
-:root { --text: #434455;}
-/*    studio; back ground             #F4F4FD*/
-:root { --studio: #F4F4FD;}
-/*  текст підвал                  #E7E9FC  */ 
-:root { --accent: #E7E9FC;}
+:root { --brand-color: #4D5AE5;
+    --background: #2E2F42; 
+    --zagolovok: #2E2F42;
+        /* колір тексту    */
+    --text: #434455;
+    --studio: #F4F4FD;
+        /*  текст підвал                  #E7E9FC  */ 
+    --accent: #E7E9FC;}
 
 
 body {   background-color: #FFFFFF; color: var(--text);   
-    font-family: 'Roboto', sans-serif; font-style: normal;}
+    font-family: 'Roboto', sans-serif; font-style: normal; letter-spacing: 0.02em;}
 .list { list-style: none;}
 
 /* кнопки, зсилки */
+.logo-footer, .logo {text-decoration-line:none}
 .link {text-decoration-line:none}
-.link:hover {color: var(--brand-color); text-decoration-line: underline; background-color: #FFFFFF}
+.link:hover {color: var(--brand-color); text-decoration-line: none; background-color: #FFFFFF}
 .link:focus { color: var(--brand-color); background-color: #FFFFFF}
 
 /* Хедер */
@@ -26,37 +26,60 @@ body {   background-color: #FFFFFF; color: var(--text);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;}
-.nav-list {color: var(--zagolovok);    }
-.navigation {
-    font-weight: 600;
+.nav-link {color: var(--zagolovok); 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;     }
+
+.auth-nav {
     font-size: 16px;
     line-height: 1.5;
-}
-.auth-nav {font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;}
+    letter-spacing: 0.02em;}
 .auth-list { color: var(--text);}
 
 /* section-hero */
 .section-hero {background-color: var(--background);}
 .hero-title {color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
     width: 492px;    }
 .sec-hero-button {background-color: var(--brand-color); color: #FFFFFF; cursor: pointer;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;}
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+
+    width: 170px;
+    height: 51px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
+.sec-hero-button:hover { box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;}
+.sec-hero-button:focus { background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
 /* section-workmeth */
+.visually-hidden {position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+    
 .section-title {color: var(--zagolovok);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;}
 .section-title-h3 {color:  var(--zagolovok);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;}
 .text {font-size: 16px;
@@ -108,7 +131,22 @@ footer {
     line-height: 1.5;}
 
 .filtr-button {background-color: var(--studio); color: var(--brand-color); 
-    border: 1px solid #E7E9FC; border-radius: 4px;}
+    border: 1px solid #E7E9FC; border-radius: 4px;
+    text-decoration-line:none;
+    
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;}
+.filtr-button:hover { background-color: #4D5AE5; color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;}
+.filtr-button:focus {background-color: #4D5AE5; color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
 .filtr-button.active {background-color: #4D5AE5; color: #FFFFFF;}
 
 /* progect-card */
@@ -119,13 +157,13 @@ footer {
     width: 360px;
     height: 420px;}
 .portfolio-title {color: var(--zagolovok);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;}
-.filtr-title {
-    font-weight: 400;
+.filtr-text { color:  var(--text);
     font-size: 16px;
     line-height: 1.5;}
+.portf-link {text-decoration-line:none}
 .portfolio-text {color: var(--studio); 
     width: 296px;
     height: 96px; }
